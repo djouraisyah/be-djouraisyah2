@@ -19,6 +19,19 @@ router.use("/user", UserRoute);
 router.use("/cart", CartRoute);
 router.use("/sale", SaleRoute);
 
-app.listen(process.env.API_PORT, () =>
+const port = process.env.PORT || 5001;
+app.listen(port, "0.0.0.0", () => {
+  console.log('App listening on port 5001');
+  dbConnection.authenticate().then(() => {
+    console.log('database terhubung')
+  }).catch((err) => {
+    console.log('terjadi error saat koneksi ke database', err)
+    process.exit()
+  })
+});
+
+/*app.listen(port, "0.0.0.0", () =>
   console.log("Server berhasil dijalankan.")
 );
+*/
+
