@@ -17,3 +17,11 @@ pool
   .catch((err) => {
     console.error("Gagal terhubung ke basis data:", err);
   });
+
+// connect to remote db
+const { Sequelize } = require('sequelize');
+const db = new Sequelize('mysql://root:AMHzkGHoUwLJuPwULvStMwGtPauOUzEY@viaduct.proxy.rlwy.net:20727/railway'), {
+  define: {
+    timestamps: false
+  }
+});
