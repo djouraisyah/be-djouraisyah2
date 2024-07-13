@@ -1,11 +1,13 @@
 {
+
+  {
   "name": "back-end",
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "description": "system back-end",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon api",
+    "start": "nodemon api",
     "test": "npm run index"
   },
   "author": "",
