@@ -2,10 +2,10 @@ import "dotenv/config";
 import mariadb from "mariadb";
 
 export const pool = mariadb.createPool({
-  host: roundhouse.proxy.rlwy.net,
-  port: 49813,
-  user: root,
-  password: LfidjdalfmMwMHACmLJHnscEHbrXJlqi,
+  host: viaduct.proxy.rlwy.net,
+  port: 40920,
+  user: railway,
+  password: B~9JtKyLmZvYhU28iyGrSZqtfRfBJaEV,
   database: railway,
 });
 
