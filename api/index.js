@@ -19,7 +19,7 @@ router.use("/user", UserRoute);
 router.use("/cart", CartRoute);
 router.use("/sale", SaleRoute);
 
-const port = process.env.PORT || 5001;
+const port = process.env.API_PORT || 5001;
 app.listen(port, "0.0.0.0", () => {
   console.log('App listening on port 5001');
   dbConnection.authenticate().then(() => {
