@@ -3,9 +3,9 @@ import mariadb from "mariadb";
 
 export const pool = mariadb.createPool({
   host: viaduct.proxy.rlwy.net,
-  port: 40920,
-  user: railway,
-  password: B~9JtKyLmZvYhU28iyGrSZqtfRfBJaEV,
+  port: 20727,
+  user: root,
+  password: AMHzkGHoUwLJuPwULvStMwGtPauOUzEY,
   database: railway,
 });
 
